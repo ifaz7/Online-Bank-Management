@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet"> 
+        <title>State Bank of SriLanka | MONEY TRANSFER</title>
+    <link rel="icon" type="image/x-icon" href="img/sbslogo.png"></link>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="moneytransfer.css">
+    <script src="/js/myjs.js"></script>
+
+    </head>
+    <body background = "image/bg.jpg">
+        <div class="nav-position;">
+        <div>
+            <img class="logoimg" src="img/SBS.png" alt="logo" ></img>
+        </div>
+          <div class="nav" style="background-color: #bebebe;">
+            <ul>
+              <li class="logo" href="home.html"> State Bank of SriLanka </li>
+              <div class="topnav">
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="moneytransfer.html"> Money-Transfer </a></li>
+                <li><a href="loan.html"> Apply Loan </a></li>
+                <li><a href="paybills.html"> Pay Bills </a></li>
+                <li><a href="about.html"> About Us </a></li>
+				<li><a href="help.html">Help</a></li>
+                </div>
+                <li class="searchbar">
+                  <input type="text" placeholder="search">
+                  <label class="search-icon">
+                      <span type="submit">&#128269;</span>
+                  </label>
+              </li>
+              <li >
+                  <button class="login-button"><a href="login.html" style="text-decoration: none;">Login</a></button>
+              </li>
+			  <li >
+                  <button class="signup"><a href="signup.html">Sign Up</a></button>
+              </li>
+            </ul>
+        </div>
+
+
+       
+    <section>
+        <div class="details">       <!-- Left Part -->
+            
+
+            <div class="enterDet">  <!-- 2 -->
+                <form method="POST" action="moneytransfer.php">
+                <h3> Enter Details </h3>
+                <hr>
+                <h3> Select Bank </h3>
+                <select name="Bank Name" id="">
+                    <option value="HNB" name="Bank Name" > Hatton Nation Bank </option>
+                    <option value="Sampath" name="Bank Name"> Sampath Bank </option>
+                    <option value="Amana"name="Bank Name" > Amana Bank </option>
+                    <option value="NDB" name="Bank Name"> NDB </option>
+                    <option value="Commercial" name="Bank Name"> Commercial Bank </option>
+                    <option value="Peoples" name="Bank Name" > Peoples Bank </option>
+                    <option value="BOC " name="Bank Name"> Bank of Ceylon </option>
+                    <option value="NSB" name="Bank Name"> National Saving Bank </option>
+                </select>
+
+                <h3> Account Number </h3>
+                <input type="number" name="Account Number" id="accNum" placeholder="9876-4589-1258-7652" pattern="[0-9]+-[0-9]+-[0-9]+-[0-9]{19}" title="Account numbet must be contain 19 charecters" required>
+
+                <h3> Account Name </h3>
+                <input type="text" name="Account Name" id="accName" placeholder="Hasaranga W" required>
+
+                <h3> Transaction Amount </h3>
+                <input type="currency" name="Transaction Amount" id="trnAmn" placeholder="$100,000.00" pattern="$[0-9,.]" min="$100.00" title="You can only transfer more than $100." required>
+
+            </div>
+
+            <div>
+                <button class="back-btn"> Back </button>
+                <button class="transfer-btn" onclick="transferSuc()" type="submit" name="transfer"> Transfer </button>
+            </div>
+        </div>
+    </form>
+
+
+    </section>
+        
+        <div style="border-bottom: 1px solid gray" ></div>
+
+       <div class="footer">
+            <div class="logo">
+                <a href="home.html"><img src="img/SBS.png" alt="Bank-logo"></img></a>
+            </div>
+            <div class="info">
+                <ul>
+                    <li class="Name"><a href="/home.html">State Bank of SriLanka</a></li>
+                    <li><a href="#map">&#128205; SriLanka</a></li>
+                    <li><a href="#phone">&phone; +94 11 5978224</a></li>
+                    <li><a href="#web">&#127760; www.sbs.lk</a></li>
+                    <li><a href="mailto:support@sbs.com">&#9993;support@sbs.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="border-bottom: 1px solid gray" ></div>
+         <div class="lowfoot">
+                <div class="contact">
+                    <p>Connect With Us</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/worldbank/photos/" target="_blank" style="text-decoration: none;"><i class="fa fa-facebook"></i>FaceBook/StateBankOfSriLanka</a></li><br>
+                        <li><a href="https://twitter.com/wbg_gov?lang=en" target="_blank" style="text-decoration: none;";><i class="fa fa-twitter"></i>Twitter/StateBankOfSriLanka</a></li><br>
+                        <li><a href="https://www.youtube.com/worldbank" target="_blank" style="text-decoration: none";><i class="fa fa-youtube"></i>Youtube/StateBankOfSriLanka</a></li><br>
+                        <li><a href="https://www.linkedin.com/company/the-world-banks" target="_blank" style="text-decoration: none";><i class="fa fa-linkedin"></i>Linkedin/StateBankOfSriLanka</a></li><br>
+                    </ul>
+                </div>
+             <div class="quickcontact">
+                <p>Quick Contact</p>
+                <form method="post" action="comments.php">
+                    <input type="text" name="Name" placeholder="Name" autocomplete="off">
+                    <input type="email" name="Email" placeholder="Email" autocomplete="off">
+                    <input type="text" name="Subject" placeholder="Subject" autocomplete="off">
+                    <input type= "text" name="Message" placeholder="Message" class="message" autocomplete="off">
+                    <button name="submit">SUBMIT</button>
+                </form>
+            </div>
+            
+        </div>
+        <div class="copyright" style="background-color: #bebebe; border-top: solid black;">
+        <div style="border-bottom: 1px solid gray" ></div>
+        <p style="text-align: center; color: grey;">&copy; Copyright 2023| State Bank of Sri Lanka </p>
+        <div style="border-bottom: 1px solid gray" ></div>
+        </div>
+    </body>
+</html>

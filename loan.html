@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet"> 
+        <title>State Bank of SriLanka | Homepage</title>
+    <link rel="icon" type="image/x-icon" href="img/sbslogo.png"></link>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" type="text/css" href="loan.css">
+
+    <script src="script.js"> // apply loan form - java script
+
+        alert("Make sure to accept the Terms & Conditions before Submitting"); //alert pop up for accept T&C as a reminder
+
+        document.getElementById('loanForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+      // Get form values
+      var title = document.getElementById('title').value;
+      var name = document.getElementById('name').value;
+      var nic = document.getElementById('nic').value;
+      var age = document.getElementById('age').value;
+      var contact = document.getElementById('contact').value;
+      var address = document.getElementById('address').value;
+      var email = document.getElementById('email').value;
+      var loanType = document.getElementById('loanType').value;
+      var designation = document.getElementById('designation').value;
+      var employer = document.getElementById('employer').value;
+      var netIncome = document.getElementById('netIncome').value;
+
+      // Log form values
+      console.log('Title:', title);
+      console.log('Name:', name);
+      console.log('NIC Number:', nic);
+      console.log('Age:', age);
+      console.log('Contact Number:', contact);
+      console.log('Address:', address);
+      console.log('Email:', email);
+      console.log('Loan Type:', loanType);
+      console.log('Designation:', designation);
+      console.log('Name of Employer:', employer);
+      console.log('Net Income:', netIncome);
+
+      // Reset the form
+      document.getElementById('loanForm').reset();
+    });
+    </script>
+
+    </head>
+    <body>
+        <div class="nav-position;">
+        <div>
+            <img class="logoimg" src="img/SBS.png" alt="logo" ></img>
+        </div>
+          <div class="nav" style="background-color: #bebebe;">
+            <ul>
+              <li class="logo" href="home.html"> State Bank of SriLanka </li>
+              <div class="topnav">
+                <li><a class="active" href="home.html"> Home </a></li>
+                <li><a href="moneytransfer.html"> Money-Transfer </a></li>
+                <li><a href="loan.html"> Apply Loan </a></li>
+                <li><a href="paybills.html"> Pay Bills </a></li>
+                <li><a href="about.html"> About Us </a></li>
+				<li><a href="help.html">Help</a></li>
+                </div>
+                <li class="searchbar">
+                  <input type="text" placeholder="search">
+                  <label class="search-icon">
+                      <span type="submit">&#128269;</span>
+                  </label>
+              </li>
+              <li >
+                  <button class="login-button"><a href="login.html" style="text-decoration: none;">Login</a></button>
+              </li>
+			  <li >
+                  <button class="signup"><a href="signup.html">Sign Up</a></button>
+              </li>
+            </ul>
+        </div>
+    </div>
+
+    <center><form id="loanForm">
+        <h1 class="header">Loan Application Form</h1>
+        <p class="warn">Please read the T&C carefully before you fill</p>
+      <div class="form-group">
+        <select id="loanType" name="loanType"><!--laon type-->
+          <option value="loanType">Loan Type</option>
+          <option value="Personal loan">Personal loan</option>
+          <option value="Educational loan">Educational loan</option>
+          <option value="House loan">House loan</option>
+        </select>
+      </div>
+    
+      
+        <div class="form-group"><!--title-->
+          <select id="title" name="title">
+            <option value="Title">Title</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Miss">Miss</option>
+            <option value="Ms.">Ms.</option>
+          </select>
+        </div>
+    
+        <div class="form-group"> <!--name-->
+          <input type="text" id="name" name="name" placeholder="Name with Initials" required>
+        </div>
+    
+        <div class="form-group"> <!--id number-->     
+          <input type="text" id="nic" name="nic" placeholder="NIC Number" required>
+        </div>
+    
+        <div class="form-group">  <!--age-->    
+          <input type="number" id="age" name="age" placeholder="Age" required>
+        </div>
+    
+        <div class="form-group">   <!--contact number-->   
+          <input type="tel" id="contact" name="contact" placeholder="Contact Number" required>
+        </div>
+    
+        <div class="form-group">     <!--home address--> 
+          <textarea id="address" name="address" placeholder="Address" required></textarea>
+        </div>
+    
+        <div class="form-group">   <!--email address-->   
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+    
+        <div class="form-group">     <!--designation-->
+          <input type="text" id="designation" name="designation" placeholder="Designation" required>
+        </div>
+    
+        <div class="form-group">      <!--company name-->
+          <input type="text" id="employer" name="employer" placeholder="Name of Employer" required>
+        </div>
+    
+        <div class="form-group">      <!--income-->
+          <input type="number" id="netIncome" name="netIncome" placeholder="Net Income" required>
+        </div>
+        <hr style="width: 700px; margin-bottom: 15px; opacity: calc(0.5);">
+    
+        <div class="form-group"> <!--terms and conditions-->
+            <label for="terms"></label>
+            <input type="checkbox" id="terms" name="terms" required>
+            <span class="terms-text">I agree to the <a href="#" target="_blank">Terms and Conditions</a>.
+          </div>
+    
+        <button type="submit" id="submitBtn">Submit</button>
+      </form></center>
+    
+
+
+
+
+            
+    <div style="border-bottom: 1px solid gray" ></div>
+
+    <div class="footer">
+         <div class="logo">
+             <a href="home.html"><img src="img/SBS.png" alt="Bank-logo"></img></a>
+         </div>
+         <div class="info">
+             <ul>
+                 <li class="Name"><a href="home.html">State Bank of SriLanka</a></li>
+                 <li><a href="#map">&#128205; SriLanka</a></li>
+                 <li><a href="#phone">&phone; +94 11 5978224</a></li>
+                 <li><a href="#web">&#127760; www.sbs.lk</a></li>
+                 <li><a href="mailto:support@sbs.com">&#9993;support@sbs.com</a></li>
+             </ul>
+         </div>
+     </div>
+     <div style="border-bottom: 1px solid gray" ></div>
+      <div class="lowfoot">
+             <div class="contact">
+                 <p>Connect With Us</p>
+                 <ul>
+                     <li><a href="https://www.facebook.com/worldbank/photos/" target="_blank" style="text-decoration: none;"><i class="fa fa-facebook"></i>FaceBook/StateBankOfSriLanka</a></li><br>
+                     <li><a href="https://twitter.com/wbg_gov?lang=en" target="_blank" style="text-decoration: none;";><i class="fa fa-twitter"></i>Twitter/StateBankOfSriLanka</a></li><br>
+                     <li><a href="https://www.youtube.com/worldbank" target="_blank" style="text-decoration: none";><i class="fa fa-youtube"></i>Youtube/StateBankOfSriLanka</a></li><br>
+                     <li><a href="https://www.linkedin.com/company/the-world-banks" target="_blank" style="text-decoration: none";><i class="fa fa-linkedin"></i>Linkedin/StateBankOfSriLanka</a></li><br>
+                 </ul>
+             </div>
+          <div class="quickcontact">
+             <p>Quick Contact</p>
+             <form method="post" action="comments.php">
+                 <input type="text" name="Name" placeholder="Name" autocomplete="off">
+                 <input type="email" name="Email" placeholder="Email" autocomplete="off">
+                 <input type="text" name="Subject" placeholder="Subject" autocomplete="off">
+                 <input type= "text" name="Message" placeholder="Message" class="message" autocomplete="off">
+                 <button name="submit">SUBMIT</button>
+             </form>
+         </div>
+         
+     </div>
+     <div class="copyright" style="background-color: #bebebe; border-top: solid black;">
+     <div style="border-bottom: 1px solid gray" ></div>
+     <p style="text-align: center; color: grey;">&copy; Copyright 2023| State Bank of Sri Lanka </p>
+     <div style="border-bottom: 1px solid gray" ></div>
+     </div>
+ </body>
+</html>

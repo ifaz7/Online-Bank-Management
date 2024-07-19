@@ -1,0 +1,463 @@
+/* Styles for the About Us page */
+
+img.logoimg{
+    padding-top: 7px;
+    padding-left: 10px;
+    width: 65px;
+    height: 65px;
+    align-items: left;
+    position: absolute;
+    cursor: pointer;
+}
+
+div.header{
+    background-color: #dedede;  
+    width: 100%;    
+}
+
+div.image{
+    width: 100%;
+    height: 25%;
+    padding: 0 90px;
+}
+
+.nav{
+    padding: 10px 40px 10px 70px;
+    border:1px solid #000;
+    border-left: none;
+    border-right: none;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul li.logo{
+    flex:1;
+    font-size: 20px;
+    font-weight: 700px;
+    cursor: pointer;
+}
+.nav ul div.topnav{
+    padding: 0 25px;
+    display: inline-flex;
+}
+
+.nav ul div.topnav a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+.nav ul div.topnav a:hover {
+    color: #000000;
+}
+
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul li{
+    float :left
+}
+
+.nav ul li.searchbar{
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+
+.nav ul li.searchbar input{
+    height: 100%;
+    width: 180px;
+    padding: 0 10px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+.nav ul li.searchbar .search-icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #e4b344;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.nav ul li.searchbar .search-icon:hover{
+    background: silver;
+}
+
+.nav ul li button.login-button{
+    background-color: #e4b344;
+    border: none;
+    color: white;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 0;
+}
+
+.nav ul li button.login-button:hover{
+    background-color: silver;
+
+}
+
+
+.nav ul li button.signup {
+    background-color: #e4b344;
+    border: none;
+    color: white;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 0;
+}
+
+.nav ul li button.signup a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav ul li button.signup:hover{
+    background-color: silver;
+
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ababab;
+    font-size: 16px;
+}
+
+.logo{
+    display: inline-block;
+    align-items: center;
+}
+
+.logo img{
+    flex-direction: row;
+    width: 95px;
+    height: 95px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 95px;
+}
+
+.info ul li .Name{
+    text-align: left;
+    font-size: larger;
+    
+}
+.info ul li{
+    display: inline-flex;
+    flex: 1;
+    text-decoration: none;
+    list-style: none;
+    margin:45px;
+    font-size: 12px;
+}
+
+.info ul li a{
+    text-decoration: none;
+    padding-right: 75px ;
+}
+
+hr{
+    padding-top: 2px;
+    border-style: double;
+}
+
+.lowfoot{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #bebebe;
+    
+}
+.contact{
+    width: 70%;
+    margin: 5px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.contact p{
+    display: block;
+    flex:1;
+    font-size: 20px;
+    font-weight: 700px;
+    cursor: pointer;
+}
+
+ ul a:visited, a:link{
+    color: blue;
+}
+
+ul a:hover{
+    color: black;
+}
+
+.contact i{
+    margin: 5px 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.quickcontact{
+    width: 25%;
+    float: inline-end;
+}
+
+.quickcontact p{
+    flex:1;
+    font-size: 20px;
+    font-weight: 700px;
+    cursor: pointer;
+    
+}
+
+.quickcontact input  {
+    display: inline;
+    margin: 5px;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.message{
+    height: 50px;
+}
+
+.quickcontact form button{
+    margin: 5px;
+    margin-left: 150px;
+    align-content: center;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #f2f2f2;
+    height: 50px;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navbar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* About Us Section Styles */
+#about-us {
+    background-color: #e9e9e9;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sub-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.video-section {
+    flex: 1;
+}
+
+.text-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #777;
+    font-size: 16px;
+}
+
+.mission {
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+    .sub-section {
+        flex-direction: column;
+    }
+    .video-section {
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+    }
+    .video-section iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-section {
+        margin-bottom: 20px;
+    }
+}
+
+/* Our History Section Styles */
+#our-history {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.our-history .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.our-history h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.history-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.history-carousel .owl-prev,
+.history-carousel .owl-next {
+    position: absolute;
+    display: block;
+    background-color: #ccc;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.history-carousel .owl-prev {
+    left: -20px;
+}
+
+.history-carousel .owl-next {
+    right: -20px;
+}
+
+.history-carousel .owl-prev:hover,
+.history-carousel .owl-next:hover {
+    background-color: #666;
+}
+
+.history-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.history-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.history-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.history-item h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.history-item .description {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+    height: 60px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.history-item .description.expanded {
+    height: auto;
+}
+
+.history-item .read-more {
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+}
+.history-item img {
+    height: 200px;
+    }
+
+/* Footer Styles */
+.footer {
+    background-color: #f2f2f2;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}

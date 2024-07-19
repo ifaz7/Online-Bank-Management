@@ -1,0 +1,32 @@
+.reg-form{
+    margin: auto;
+    width: 50%;
+    padding: 16px;
+    background-color: #ababab ;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline;
+    border: none;
+}
+
+input:focus{
+    background-color: #f3f2f2;
+}
+
+.registerbtn{
+    background-color: orange;
+    border-radius: 8px;
+    padding: 16px;
+    cursor: pointer;
+    margin: auto;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.registerbtn:hover{
+    opacity: 1;
+}

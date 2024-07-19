@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    position: relative;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+}
+
+img.logoimg{
+    padding-top: 7px;
+    padding-left: 10px;
+    width: 65px;
+    height: 65px;
+    align-items: left;
+    position: absolute;
+    cursor: pointer;
+}
+
+div.header{
+    background-color: #dedede;  
+    width: 100%;    
+}
+
+div.image{
+    width: 100%;
+    height: 25%;
+    padding: 0 90px;
+}
+
+.nav{
+    padding: 10px 40px 10px 70px;
+    border:1px solid #000;
+    border-left: none;
+    border-right: none;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul li.logo{
+    flex:1;
+    font-size: 20px;
+    font-weight: 700px;
+    cursor: pointer;
+}
+.nav ul div.topnav{
+    padding: 0 25px;
+    display: inline-flex;
+}
+
+.nav ul div.topnav a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+.nav ul div.topnav a:hover {
+    color: #000000;
+}
+
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul li{
+    float :left
+}
+
+.nav ul li.searchbar{
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+
+.nav ul li.searchbar input{
+    height: 100%;
+    width: 180px;
+    padding: 0 10px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+.nav ul li.searchbar .search-icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #e4b344;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.nav ul li.searchbar .search-icon:hover{
+    background: silver;
+}
+
+.nav ul li button.login-button{
+    background-color: #e4b344;
+    border: none;
+    color: white;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 0;
+}
+
+.nav ul li button.login-button:hover{
+    background-color: silver;
+
+}
+
+
+.nav ul li button.signup {
+    background-color: #e4b344;
+    border: none;
+    color: white;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 0;
+}
+
+.nav ul li button.signup a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav ul li button.signup:hover{
+    background-color: silver;
+
+}
+
+
+.user-logo img {
+    width: 150px;
+    margin-left: 300px;
+}
+
+
+/* Money Transfer ----------------------------------------------------------------------------- */
+section {
+    margin: 5px;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 30px 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Left Side ----------------------------------- */
+.details {
+    position: relative;
+    left: 30px;
+}
+.payFrom, .payTo {
+    padding: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.PFdet {
+    padding: 10px;
+}
+
+.enterDet {
+    padding-bottom: 20px;
+}
+
+.enterDet input, select {
+    width: 80%;
+}
+
+.enterDet hr {
+    height: 5px;
+    background-color: black;
+    width: 110px;
+}
+
+.enterDet h3 {
+    padding: 20px 0 10px 0;
+}
+
+.PTdet {
+    padding: 15px;
+}
+
+/* Right Side ----------------------------------- */
+.fullBox {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #b3b2b2;
+    position: relative;
+    right: 50px;
+    top: 40px;
+    padding: 20px;
+}
+
+/* Box 1 ------------------- */
+.box1 {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.box1 h3{
+    padding-bottom: 10px;
+}
+
+.box1-1{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #eae9e9;
+    padding: 5px;
+}
+
+.box1-1 p {
+    padding-bottom: 5px;
+}
+
+.box1-1 .money {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Box 2 ------------------------ */
+.box2 {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.box2 table {
+    margin-top: 5px;
+    overflow-y: scroll;
+    border-collapse: separate;
+    border-spacing: 10px;
+    min-width: 100px;
+}
+
+.box2 table tr td{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #c9c9c9;
+    padding: 5px 20px;
+    padding-right: 120px;
+    
+}
+
+/* Button Part ------------------------ */
+
+.back-btn {
+    position: relative;
+    left: 100px;
+    color: white;
+    background-color: #333333;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+    font-weight: bolder;
+}
+
+.transfer-btn {
+    position: relative;
+    left: 880px;
+    color: white;
+    background-color: #333333;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ababab;
+    font-size: 16px;
+}
+
+.logo{
+    display: inline-block;
+    align-items: center;
+}
+
+.logo img{
+    flex-direction: row;
+    width: 95px;
+    height: 95px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 95px;
+}
+
+.info ul li .Name{
+    text-align: left;
+    font-size: larger;
+    
+}
+.info ul li{
+    display: inline-flex;
+    flex: 1;
+    text-decoration: none;
+    list-style: none;
+    margin:45px;
+    font-size: 12px;
+}
+
+.info ul li a{
+    text-decoration: none;
+    padding-right: 75px ;
+}
+
+hr{
+    padding-top: 2px;
+    border-style: double;
+}
+
+.lowfoot{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #bebebe;
+    
+}
+.contact{
+    width: 70%;
+    margin: 5px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.contact p{
+    display: block;
+    flex:1;
+    font-size: 20px;
+    font-weight: 700px;
+    cursor: pointer;
+}
+
+ ul a:visited, a:link{
+    color: blue;
+}
+
+ul a:hover{
+    color: black;
+}
+
+.contact i{
+    margin: 5px 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.quickcontact{
+    width: 25%;
+    float: inline-end;
+}
+
+.quickcontact p{
+    flex:1;
+    font-size: 20px;
+    font-weight: 700px;
+    cursor: pointer;
+    
+}
+
+.quickcontact input  {
+    display: inline;
+    margin: 5px;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.message{
+    height: 50px;
+}
+
+.quickcontact form button{
+    margin: 5px;
+    margin-left: 150px;
+    align-content: center;
+}
